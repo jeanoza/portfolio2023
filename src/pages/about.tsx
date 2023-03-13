@@ -14,20 +14,15 @@ const CONTENTS = [
 
 export default function About() {
 	return <Layout>
-		<Seo title="About" />
-		<main className="px-2 md:px-6">
-			<div className="w-100 md:w-2/3 m-auto gap-4">
-				<div className="flex flex-col gap-4 justify-center items-center my-8">
-					<div className="avatar rounded-full mx-auto" />
-					<h3>{TITLES[0]}</h3>
-					<h3 className="text-white">{TITLES[1]}</h3>
-				</div>
-				<div>
-					{CONTENTS.map((content, index) => <p className="my-4" key={index}>{content}</p>)}
-					<h4 className="">Cordialement</h4>
-				</div>
-			</div>
-		</main >
+		<div className="flex flex-col gap-4 justify-center items-center my-4 p-4 bg-base-200 rounded-lg">
+			<div className="avatar rounded-full mx-auto" />
+			<h3>{TITLES[0]}</h3>
+			<h3 className="text-white">{TITLES[1]}</h3>
+		</div>
+		<div className="p-4 bg-base-200 rounded-lg">
+			{CONTENTS.map((content, index) => <p className="my-4" key={index}>{content}</p>)}
+			<h4 className="">Cordialement</h4>
+		</div>
 		<style jsx>{`
 			.avatar {
 				min-width:120px;
