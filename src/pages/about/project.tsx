@@ -1,12 +1,11 @@
 import Layout from "@/components/layout";
 import Seo from "@/components/seo";
-import Link from "next/link";
 
-export default function About() {
+export default function Project() {
 	return <Layout>
-		<Seo title="about" />
-		<main>
-			<h3>About</h3>
+		<Seo title="Project" />
+		<main className="px-6">
+			<h3>Project</h3>
 		</main>
 	</Layout>
 }
