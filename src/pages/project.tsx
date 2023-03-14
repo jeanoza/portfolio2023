@@ -1,9 +1,11 @@
 import Layout from "@/components/layout";
+import Seo from "@/components/seo";
 
 export default function Project() {
 	return <Layout>
-		<main className="px-6">
+		<Seo content="Project" />
+		<div className="">
 			<h3>Project</h3>
-		</main>
+		</div>
 	</Layout>
 }
