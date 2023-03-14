@@ -42,7 +42,6 @@ const COMPETENCES = [
 
 export default function Competence() {
 	return <Layout>
-		<Seo content="Competence" />
 		<div className="flex flex-wrap gap-4 justify-center">
 			{COMPETENCES.map(
 				(competence, index) => <Card

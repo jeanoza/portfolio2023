@@ -15,7 +15,6 @@ const CONTENTS = [
 
 export default function About() {
 	return <Layout>
-		<Seo content="About" />
 		<div className="flex flex-col gap-4 justify-center items-center my-4 p-4 rounded-lg shadow-lg">
 			<div className="avatar rounded-full mx-auto" />
 			<h3 className="font-semibold">{TITLES[0]}</h3>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <Seo content="Home" />
+      <Seo title="home" />
       <Link href="about">
         <main className='h-screen flex justify-center items-center'>
           <div className="px-2 w-100 md:w-2/3 lg:w-1/2 border-4 border-primary">
