@@ -3,7 +3,8 @@ import Seo from "@/components/seo";
 
 const TITLES = [
 	"Persévérant, Curieux, Organisé et Solidaire",
-	"Make from a crisis to an opportunity"
+	"Make from a crisis to an opportunity",
+	"Etudiant sortant de sciences humaines a commencé à coder depuis Covid-19..."
 ]
 const CONTENTS = [
 	"Bonjour, je suis un développeur Fullstack avec plus d'un an d'expérience en tant que Fullstack développeur chez Estech Design. Je suis actuellement à la recherche d'un poste de développeur backend junior et je possède des compétences en codage dans plusieurs langages tels que C, C++, Java, Python, JavaScript et TypeScript, ainsi que des compétences pratiques en utilisant des frameworks tels que React, Next.js, Express et Nest.js. ",
@@ -14,14 +15,14 @@ const CONTENTS = [
 
 export default function About() {
 	return <Layout>
-		<div className="flex flex-col gap-4 justify-center items-center my-4 p-4 bg-base-200 rounded-lg">
+		<div className="flex flex-col gap-4 justify-center items-center my-4 p-4 rounded-lg shadow-lg">
 			<div className="avatar rounded-full mx-auto" />
-			<h3>{TITLES[0]}</h3>
-			<h3 className="text-white">{TITLES[1]}</h3>
+			<h3 className="font-semibold">{TITLES[0]}</h3>
+			<h3 className="text-primary">{TITLES[1]}</h3>
+			<h3 className="text-slate-400 italic">{TITLES[2]}</h3>
 		</div>
-		<div className="p-4 bg-base-200 rounded-lg">
+		<div className="p-4 rounded-lg shadow-lg">
 			{CONTENTS.map((content, index) => <p className="my-4" key={index}>{content}</p>)}
-			<h4 className="">Cordialement</h4>
 		</div>
 		<style jsx>{`
 			.avatar {

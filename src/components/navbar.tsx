@@ -5,7 +5,7 @@ const ITEMS = ['about', 'competence', 'project']
 
 export default function Navbar() {
 	const { pathname } = useRouter();
-	return <div className="navbar bg-base-100">
+	return <div className="navbar bg-base-100 mb-4">
 		<div className="navbar-start">
 			<div className="dropdown">
 				<label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -15,7 +15,7 @@ export default function Navbar() {
 					{ITEMS.map((item, index) => {
 						const href = item;
 						const content = item[0].toUpperCase() + item.slice(1);
-						return <li key={index} className={pathname.slice(1) === href ? "text-white" : ""}><Link href={href}>{content}</Link></li>
+						return <li key={index} className={pathname.slice(1) === href ? "text-primary" : ""}><Link href={href}>{content}</Link></li>
 					})}
 				</ul>
 			</div>
@@ -26,7 +26,7 @@ export default function Navbar() {
 				{ITEMS.map((item, index) => {
 					const href = item;
 					const content = item[0].toUpperCase() + item.slice(1);
-					return <li key={index} className={pathname.slice(1) === href ? "text-white" : ""}><Link href={href}>{content}</Link></li>
+					return <li key={index} className={pathname.slice(1) === href ? "text-primary" : ""}><Link href={href}>{content}</Link></li>
 				})}
 				{/* <li><Link href="/about">Kyubong?</Link></li>
 				<li><Link href="/about/competence">Competence</Link></li>

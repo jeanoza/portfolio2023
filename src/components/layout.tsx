@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Navbar from "./navbar";
 import Seo from "./seo";
+import Footer from "./footer";
 
 export default function Layout({ children }: React.PropsWithChildren) {
 	const { pathname } = useRouter();
@@ -14,5 +15,6 @@ export default function Layout({ children }: React.PropsWithChildren) {
 				{children}
 			</div>
 		</main>
+		<Footer />
 	</div>
 }

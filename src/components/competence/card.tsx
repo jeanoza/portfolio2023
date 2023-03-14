@@ -7,14 +7,22 @@ interface IProps {
 	imageUrl: string;
 }
 export default function Card({ title, content, tools, imageUrl }: IProps) {
-	return <div className="card card-compact w-80 bg-neutral shadow-xl">
-		<figure><img height="300" src={imageUrl} /></figure>
+	return <div className="card card-compact w-80 shadow-xl">
+		<div className="cover w-100"></div>
 		<div className="card-body">
 			<h2 className="card-title">{title}</h2>
 			<h3 className="text-lg">{content}</h3>
-			<ul className="flex gap-4 text-white flex-wrap justify-center">
+			<ul className="flex gap-4 text-slate-500 flex-wrap justify-center">
 				{tools.map((tool, index) => <li key={index}>{tool}</li>)}
 			</ul>
 		</div>
+		<style jsx>{`
+			.cover {
+				height:200px;
+				background-image:url(${imageUrl});
+				background-size: cover;
+    		background-position: center
+			}
+		`}</style>
 	</div>
 }
