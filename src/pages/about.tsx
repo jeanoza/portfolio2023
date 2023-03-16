@@ -24,7 +24,7 @@ export default function About() {
 				</div>
 				<div className="p-4">
 					<div className="font-bold flex justify-center items-center gap-4 my-4">
-						<h3>Developpeur Fullstack / Etudiant a </h3>
+						<h3>Developpeur Fullstack | Etudiant a </h3>
 						<div className="icon ft"></div>
 					</div>
 					<div className="font-bold flex justify-center items-center gap-4 my-4">
