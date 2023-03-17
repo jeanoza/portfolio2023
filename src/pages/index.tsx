@@ -2,7 +2,7 @@ import Layout from "@/components/layout";
 import Seo from "@/components/seo";
 import Link from "next/link";
 
-export default function Home() {
+export default function Home({ lang, setLang }: any) {
 	return (
 		<>
 			<Seo title="home" />

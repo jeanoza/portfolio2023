@@ -13,9 +13,9 @@ const CONTENTS = [
 	"Je suis passionné par la technologie, motivé et désireux d'apprendre et de grandir. Avec mes compétences en codage et en bases de données, ainsi que mon expérience dans l'utilisation de Docker, je suis convaincu que je peux apporter une valeur ajoutée à toute entreprise à la recherche d'un développeur backend junior talentueux et motivé.",
 ];
 
-export default function About() {
+export default function About({ lang, setLang }: any) {
 	return (
-		<Layout>
+		<Layout lang={lang} setLang={setLang}>
 			<div className="flex flex-col gap-6 rounded-lg shadow-lg">
 				<div className="flex flex-col gap-4 justify-center items-center p-4">
 					<div className="avatar rounded-full mx-auto" />
