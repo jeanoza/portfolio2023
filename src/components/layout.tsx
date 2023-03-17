@@ -12,7 +12,9 @@ export default function Layout({ children }: React.PropsWithChildren) {
 			<Seo title={title} />
 			<Navbar />
 			<main className="px-2 md:px-6 m-auto">
-				<div className="w-100 lg:w-2/3 2xl:w-1/2 mx-auto">{children}</div>
+				<div className="w-100 lg:w-10/12 mx-auto max-w-screen-xl">
+					{children}
+				</div>
 			</main>
 			<Footer />
 		</div>

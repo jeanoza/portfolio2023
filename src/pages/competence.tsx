@@ -14,43 +14,50 @@ const COMPETENCES = [
 			"MySQL / PostgreSQL",
 			"MongoDB",
 			"C/C++",
-			"Shell(linux / unix)"
+			"Shell(linux / unix)",
 		],
-		imageUrl: "/can.jpeg"
+		imageUrl: "/can.jpeg",
 	},
 	{
 		title: "En cours",
 		content: "Je suis en train d'apprendre",
-		tools: ["Spring/Spring boot"],
-		imageUrl: "/work.jpeg"
-
+		tools: [
+			"Design pattern",
+			"Clean code",
+			"Test Driven Development",
+			"Restful API",
+			"Computer sciences",
+		],
+		imageUrl: "/work.jpeg",
 	},
 	{
 		title: "A venir",
 		content: "J'aimerais apprendre",
-		tools: ["Spring / Spring boot"],
-		imageUrl: "/futur.webp"
-
+		tools: ["Spring / Spring boot", "Flask", "Django", "Kubernetes"],
+		imageUrl: "/futur.webp",
 	},
 	{
 		title: "Autre connaissances",
 		content: "J'ai appris et comprends",
 		tools: ["Docker", "Git", "Agile(Scrum)", "Java", "Python"],
-		imageUrl: "/knowledge.jpeg"
-	}
-]
+		imageUrl: "/knowledge.jpeg",
+	},
+];
 
 export default function Competence() {
-	return <Layout>
-		<div className="flex flex-wrap gap-4 justify-center">
-			{COMPETENCES.map(
-				(competence, index) => <Card
-					key={index}
-					title={competence.title}
-					content={competence.content} tools={competence.tools}
-					imageUrl={competence.imageUrl}
-				/>
-			)}
-		</div>
-	</Layout>
+	return (
+		<Layout>
+			<div className="flex flex-wrap gap-4 justify-center">
+				{COMPETENCES.map((competence, index) => (
+					<Card
+						key={index}
+						title={competence.title}
+						content={competence.content}
+						tools={competence.tools}
+						imageUrl={competence.imageUrl}
+					/>
+				))}
+			</div>
+		</Layout>
+	);
 }
