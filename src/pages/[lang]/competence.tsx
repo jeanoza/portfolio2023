@@ -1,11 +1,18 @@
 import Card from "@/components/competence/card";
 import Layout from "@/components/layout";
 import Seo from "@/components/seo";
+import { useRouter } from "next/router";
 
 const COMPETENCES = [
 	{
-		title: "Acquises",
-		content: "Je suis capable de coder avec ",
+		title: {
+			en: "Acquired",
+			fr: "Acquises",
+		},
+		content: {
+			en: "I am able to code with",
+			fr: "Je suis capable de coder avec ",
+		},
 		tools: [
 			"JavaScript / TypeScript",
 			"React / Next",
@@ -19,8 +26,14 @@ const COMPETENCES = [
 		imageUrl: "/can.jpeg",
 	},
 	{
-		title: "En cours",
-		content: "Je suis en train d'apprendre",
+		title: {
+			en: "In progress",
+			fr: "En cours",
+		},
+		content: {
+			en: "I am learning",
+			fr: "Je suis en train d'apprendre",
+		},
 		tools: [
 			"Design Pattern",
 			"Clean Code",
@@ -31,28 +44,43 @@ const COMPETENCES = [
 		imageUrl: "/work.jpeg",
 	},
 	{
-		title: "A venir",
-		content: "J'aimerais apprendre",
+		title: {
+			en: "In futur",
+			fr: "A venir",
+		},
+		content: {
+			en: "I would like to learn",
+			fr: "J'aimerais apprendre",
+		},
 		tools: ["Spring / Spring boot", "Flask", "Django", "Kubernetes"],
 		imageUrl: "/futur.webp",
 	},
 	{
-		title: "Autre connaissances",
-		content: "J'ai appris et comprends",
+		title: {
+			en: "Other skills",
+			fr: "Autre connaissances",
+		},
+		content: {
+			en: "I learned and know",
+			fr: "J'ai appris et comprends",
+		},
 		tools: ["Docker", "Git", "Agile(Scrum)", "Java", "Python"],
 		imageUrl: "/knowledge.jpeg",
 	},
 ];
 
 export default function Competence() {
+	const {
+		query: { lang },
+	} = useRouter();
 	return (
 		<Layout>
 			<div className="flex flex-wrap gap-4 justify-center">
 				{COMPETENCES.map((competence, index) => (
 					<Card
 						key={index}
-						title={competence.title}
-						content={competence.content}
+						title={competence.title[lang as keyof Lang]}
+						content={competence.content[lang as keyof Lang]}
 						tools={competence.tools}
 						imageUrl={competence.imageUrl}
 					/>
