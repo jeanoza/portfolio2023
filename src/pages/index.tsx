@@ -1,12 +1,11 @@
-import Layout from "@/components/layout";
 import Seo from "@/components/seo";
 import Link from "next/link";
 
-export default function Home({ lang, setLang }: any) {
+export default function Home() {
 	return (
 		<>
 			<Seo title="home" />
-			<Link href="about">
+			<Link href="fr/about">
 				<main className="h-screen flex justify-center items-center">
 					<div className="px-2 w-100 md:w-2/3 2xl:w-1/2 border-4 border-primary">
 						<h1 className="text-3xl mt-6 text-center text-slate-200">

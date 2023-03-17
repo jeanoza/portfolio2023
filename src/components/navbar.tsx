@@ -20,14 +20,12 @@ const NAV_ITEMS = {
 	},
 };
 
-export default function Navbar({
-	lang,
-	setLang,
-}: {
-	lang: string;
-	setLang: any;
-}) {
-	const { pathname } = useRouter();
+export default function Navbar() {
+	const {
+		pathname,
+		query: { lang },
+	} = useRouter();
+	if (!lang) return null;
 	return (
 		<div className="navbar bg-base-100 mb-4">
 			<div className="navbar-start">
@@ -53,14 +51,21 @@ export default function Navbar({
 						className="menu menu-compact dropdown-content p-2 shadow bg-base-100 rounded-box w-52"
 					>
 						{Object.entries(NAV_ITEMS).map(([key, value]) => {
-							const href = key;
+							const _pathname = `/[lang]/${key}`;
 							const content = value[lang as keyof Lang];
 							return (
 								<li
 									key={key}
-									className={pathname.slice(1) === href ? "text-primary" : ""}
+									className={pathname.includes(key) ? "text-primary" : ""}
 								>
-									<Link href={href}>{content}</Link>
+									<Link
+										href={{
+											pathname: _pathname,
+											query: { lang },
+										}}
+									>
+										{content}
+									</Link>
 								</li>
 							);
 						})}
@@ -73,14 +78,21 @@ export default function Navbar({
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1">
 					{Object.entries(NAV_ITEMS).map(([key, value]) => {
-						const href = key;
+						const _pathname = `/[lang]/${key}`;
 						const content = value[lang as keyof Lang];
 						return (
 							<li
 								key={key}
-								className={pathname.slice(1) === href ? "text-primary" : ""}
+								className={pathname.includes(key) ? "text-primary" : ""}
 							>
-								<Link href={href}>{content}</Link>
+								<Link
+									href={{
+										pathname: _pathname,
+										query: { lang },
+									}}
+								>
+									{content}
+								</Link>
 							</li>
 						);
 					})}
