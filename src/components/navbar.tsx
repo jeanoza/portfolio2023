@@ -1,14 +1,10 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-interface Lang {
-	en: string;
-	fr: string;
-}
 const NAV_ITEMS = {
 	about: {
-		en: "About",
-		fr: "Par rapport a",
+		en: "Kyubong ?",
+		fr: "Kyubong ?",
 	},
 	competence: {
 		en: "Competence",
@@ -25,6 +21,13 @@ export default function Navbar() {
 		pathname,
 		query: { lang },
 	} = useRouter();
+	const router = useRouter();
+
+	function handleChangeLang(lang: string) {
+		const { pathname, query } = router;
+		const newQuery = { ...query, lang };
+		router.replace({ pathname, query: newQuery });
+	}
 	if (!lang) return null;
 	return (
 		<div className="navbar bg-base-100 mb-4">
@@ -98,10 +101,33 @@ export default function Navbar() {
 					})}
 				</ul>
 			</div>
-			<div className="navbar-end ">
-				<div className="langIcon mx-2">FR</div>
-				<div className="langIcon mx-2">EN</div>
+			<div className="navbar-end mr-4">
+				<div
+					className="langIcon fr rounded-full w-8 h-8 cursor-pointer mx-1"
+					onClick={() => handleChangeLang("fr")}
+				/>
+				<div
+					className="langIcon en rounded-full w-8 h-8 cursor-pointer mx-1"
+					onClick={() => handleChangeLang("en")}
+				/>
 			</div>
+			<style jsx>{`
+				.langIcon {
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				.langIcon:hover {
+					transform: scale(1.1);
+					transition: transform 0.1s linear;
+				}
+				.langIcon.fr {
+					background-image: url("/fr.png");
+				}
+				.langIcon.en {
+					background-image: url("/en.png");
+				}
+			`}</style>
 		</div>
 	);
 }

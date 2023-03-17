@@ -2,11 +2,16 @@ const ICONS_MAJOR = ["js", "ts", "node", "nest", "react", "next"];
 const ICONS_SECOND = ["java", "python", "c", "cpp"];
 const ICONS_ETC = ["postgresql", "mysql", "docker", "shell"];
 
-export default function Stack() {
+const STATUT = {
+	en: "Fullstack Developer | Student at ",
+	fr: "Développeur Fullstack | Etudiant à ",
+};
+
+export default function Stack({ lang }: { lang: string }) {
 	return (
 		<div className="p-4">
 			<div className="font-bold flex justify-center items-center gap-4 my-4">
-				<h3>Developpeur Fullstack | Etudiant a </h3>
+				<h3>{STATUT[lang as keyof Lang]}</h3>
 				<div className="icon ft"></div>
 			</div>
 			<div className="w-3/4  mx-auto">
