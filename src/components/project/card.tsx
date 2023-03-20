@@ -1,30 +1,37 @@
+import Link from "next/link";
+
 interface IProps {
 	title: string;
 	content: string;
 	tools: string[];
-	imageUrl: string;
+	gitUrl?: string;
+	prodUrl?: string;
 }
-export default function Card({ title, content, tools, imageUrl }: IProps) {
+export default function Card({ title, content, tools, gitUrl, prodUrl }: IProps) {
 	return (
-		<div className="card card-compact w-100 shadow-xl">
-			<div className="cover w-100" />
+
+		<div className="card card-compact shadow-xl mb-4">
 			<div className="card-body">
 				<h2 className="card-title">{title}</h2>
-				<h3 className="text-lg">{content}</h3>
-				<ul className="flex gap-4 text-slate-500 flex-wrap justify-center">
+				<p className="text-slate-400">{content}</p>
+				<ul className="flex gap-x-4 text-slate-500 flex-wrap justify-center">
 					{tools.map((tool, index) => (
 						<li key={index}>{tool}</li>
 					))}
 				</ul>
+				<div className="flex justify-center items-center gap-4 mt-4">
+					{prodUrl && <Link href={prodUrl} target="_blank">
+						<div className="cursor-pointer px-4 py-1 bg-primary text-white border-2 border-transparent hover:border-primary hover:bg-white hover:text-primary rounded-lg">Demo</div>
+					</Link>
+					}
+					{gitUrl && <Link href={gitUrl} target="_blank">
+						<div className="cursor-pointer px-4 py-1 bg-primary text-white border-2 border-transparent hover:border-primary hover:bg-white hover:text-primary rounded-lg">Code</div>
+					</Link>
+					}
+				</div>
 			</div>
 			<style jsx>{`
-				.cover {
-					height: 200px;
-					background-image: url(${imageUrl});
-					background-size: cover;
-					background-position: center;
-					border-radius:1rem 1rem 0 0;
-				}
+
 			`}</style>
 		</div>
 	);
