@@ -8,7 +8,7 @@ interface IProps {
 }
 export default function Card({ title, content, tools, imageUrl }: IProps) {
 	return (
-		<div className="card card-compact w-96 shadow-xl">
+		<div className="card card-compact w-80 sm:w-96 shadow-xl">
 			<div className="cover w-100" />
 			<div className="card-body">
 				<h2 className="card-title">{title}</h2>

@@ -101,7 +101,7 @@ export default function Navbar() {
 					})}
 				</ul>
 			</div>
-			<div className="navbar-end mr-4">
+			<div className="navbar-end">
 				<div
 					className="langIcon fr rounded-full w-8 h-8 cursor-pointer mx-1"
 					onClick={() => handleChangeLang("fr")}

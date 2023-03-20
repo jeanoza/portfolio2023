@@ -42,8 +42,8 @@ export default function About() {
 	if (!lang) return null;
 	return (
 		<Layout>
-			<div className="flex flex-col gap-6 rounded-lg shadow-lg w-100 md:w-2/3 ">
-				<div className="flex flex-col gap-4 justify-center items-center p-4">
+			<div className="flex flex-col rounded-lg shadow-lg w-100 md:w-2/3 ">
+				<div className="flex flex-col gap-4 justify-center items-center text-center">
 					<div className="avatar rounded-full mx-auto" />
 					<h3 className="font-semibold">{TITLES[0][lang as keyof Lang]}</h3>
 					<h3 className="text-primary">{TITLES[1][lang as keyof Lang]}</h3>
@@ -52,7 +52,7 @@ export default function About() {
 					</h3>
 				</div>
 				{typeof lang === "string" && <Stack lang={lang} />}
-				<div className="p-4">
+				<div className="">
 					{CONTENTS.map((content, index) => (
 						<p className="my-4" key={index}>
 							{content[lang as keyof Lang]}

@@ -9,7 +9,7 @@ const STATUT = {
 
 export default function Stack({ lang }: { lang: string }) {
 	return (
-		<div className="p-4">
+		<div className="">
 			<div className="font-bold flex justify-center items-center gap-4 my-4">
 				<h3>{STATUT[lang as keyof Lang]}</h3>
 				<div className="icon ft"></div>
@@ -33,8 +33,8 @@ export default function Stack({ lang }: { lang: string }) {
 			</div>
 			<style jsx>{`
 				.icon {
-					width: 56px;
-					height: 56px;
+					width: 40px;
+					height: 40px;
 					background-size: 100%;
 					background-repeat: no-repeat;
 					background-position: center center;
