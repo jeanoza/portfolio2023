@@ -64,7 +64,7 @@ export default function About() {
 				.avatar {
 					min-width: 120px;
 					min-height: 120px;
-					background-image: url("/kychoi.jpeg");
+					background-image: url("/images/about/kychoi.jpeg");
 					background-size: cover;
 					background-position: center center;
 				}
