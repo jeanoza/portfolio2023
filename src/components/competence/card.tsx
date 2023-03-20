@@ -12,7 +12,7 @@ export default function Card({ title, content, tools, imageUrl }: IProps) {
 			<div className="cover w-100" />
 			<div className="card-body">
 				<h2 className="card-title">{title}</h2>
-				<h3 className="text-lg">{content}</h3>
+				<p className="text-lg">{content}</p>
 				<ul className="flex gap-4 text-slate-500 flex-wrap justify-center">
 					{tools.map((tool, index) => (
 						<li key={index}>{tool}</li>

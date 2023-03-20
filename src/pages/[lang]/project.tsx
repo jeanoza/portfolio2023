@@ -22,7 +22,7 @@ const PROJECTS = [
 		prodUrl: undefined,
 	},
 	{
-		title: "Développement de Web application / 2021 - 2022",
+		title: "Web application / 2021 - 2022",
 		content: {
 			en: "Professional project at Estech Design, Web application development using Vanilla JS, SocketIO et WebSocket, as a Fullstack developer",
 			fr: "Projet professionnel chez Estech Design, Développement d'une application Web fait par Vanilla JS, SocketIO et WebSocket, en tant que Développeur Fullstack",
@@ -37,7 +37,7 @@ const PROJECTS = [
 		prodUrl: undefined,
 	},
 	{
-		title: "Développement de Web application / 2021",
+		title: "Web application / 2021",
 		content: {
 			en: "Professional project at Consortium, E-commerce application development using React, Django, and Kubernetes, as an intern.",
 			fr: "Projet professionnel chez Comsortium, Développement d'une application E-commerce fait par React, Django et Kubernetes, en tant que stagiaire",
