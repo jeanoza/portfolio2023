@@ -9,8 +9,7 @@ interface IProps {
 }
 export default function Card({ title, content, tools, gitUrl, prodUrl }: IProps) {
 	return (
-
-		<div className="card card-compact shadow-xl mb-4">
+		<div className="card card-compact shadow-xl w-100 md:w-2/3 mb-4">
 			<div className="card-body">
 				<h2 className="card-title">{title}</h2>
 				<p className="text-slate-400">{content}</p>
@@ -30,9 +29,6 @@ export default function Card({ title, content, tools, gitUrl, prodUrl }: IProps)
 					}
 				</div>
 			</div>
-			<style jsx>{`
-
-			`}</style>
 		</div>
 	);
 }

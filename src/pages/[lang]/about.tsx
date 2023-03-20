@@ -42,7 +42,7 @@ export default function About() {
 	if (!lang) return null;
 	return (
 		<Layout>
-			<div className="flex flex-col gap-6 rounded-lg shadow-lg">
+			<div className="flex flex-col gap-6 rounded-lg shadow-lg w-100 md:w-2/3 ">
 				<div className="flex flex-col gap-4 justify-center items-center p-4">
 					<div className="avatar rounded-full mx-auto" />
 					<h3 className="font-semibold">{TITLES[0][lang as keyof Lang]}</h3>

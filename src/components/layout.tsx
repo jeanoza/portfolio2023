@@ -12,7 +12,7 @@ export default function Layout({ children }: any) {
 			<Seo title={title} />
 			<Navbar />
 			<main className="px-2 md:px-6 m-auto">
-				<div className="w-100 lg:w-10/12 mx-auto max-w-screen-xl">
+				<div className="w-100 lg:w-10/12 mx-auto max-w-screen-xl flex justify-center">
 					{children}
 				</div>
 			</main>

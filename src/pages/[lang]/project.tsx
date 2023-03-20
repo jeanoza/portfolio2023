@@ -79,7 +79,7 @@ export default function Project() {
 	} = useRouter();
 	return (
 		<Layout>
-			<div className="">
+			<div className="flex flex-col justify-center items-center gap-4">
 				{PROJECTS.map((project, index) =>
 					<Card
 						key={index}
