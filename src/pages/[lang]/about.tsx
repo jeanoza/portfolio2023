@@ -12,7 +12,7 @@ const TITLES = [
 		fr: "Transformer une crise en une opportunité",
 	},
 	{
-		en: "A philosophy graduate in philosophy started coding since Covid-19...",
+		en: "A philosophy graduate started coding since Covid-19...",
 		fr: "Etudiant sortant de sciences humaines a commencé à coder depuis Covid-19...",
 	},
 ];
