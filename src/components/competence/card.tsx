@@ -25,6 +25,7 @@ export default function Card({ title, content, tools, imageUrl }: IProps) {
 					background-image: url(${imageUrl});
 					background-size: cover;
 					background-position: center;
+					border-radius:1rem 1rem 0 0;
 				}
 			`}</style>
 		</div>
