@@ -27,7 +27,7 @@ const CONTENTS = [
 	},
 	{
 		en: "As a Fullstack developer, I have gained valuable experience in designing and implementing databases, including PostgreSQL, MySQL, and MongoDB. Additionally, I have experience using Docker for deploying my applications, which enables me to create robust and easily deployable applications.",
-		fr: "En tant que développeur Fullstack, j'ai acquis une expérience précieuse en matière de conception et d'implémentation de bases de données, notamment PostgreSQL, MySQL et MongoDB.De plus, j'ai de l'expérience dans l'utilisation de Docker pour le déploiement de mes applications, ce qui me permet de créer des applications robustes et faciles à déployer.",
+		fr: "En tant que développeur Fullstack, j'ai acquis une expérience précieuse en matière de conception et d'implémentation de bases de données, notamment PostgreSQL, MySQL et MongoDB. De plus, j'ai de l'expérience dans l'utilisation de Docker pour le déploiement de mes applications, ce qui me permet de créer des applications robustes et faciles à déployer.",
 	},
 	{
 		en: "I am passionate about technology, motivated, and eager to learn and grow. With my coding and database skills, as well as my experience in using Docker, I am confident that I can bring added value to any company in search of a talented and motivated junior backend developer.",
