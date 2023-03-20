@@ -122,10 +122,10 @@ export default function Navbar() {
 					transition: transform 0.1s linear;
 				}
 				.langIcon.fr {
-					background-image: url("/fr.png");
+					background-image: url("/images/navbar/fr.png");
 				}
 				.langIcon.en {
-					background-image: url("/en.png");
+					background-image: url("/images/navbar/en.png");
 				}
 			`}</style>
 		</div>

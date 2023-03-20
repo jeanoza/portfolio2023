@@ -23,7 +23,7 @@ const COMPETENCES = [
 			"C/C++",
 			"Shell(linux / unix)",
 		],
-		imageUrl: "/can.jpeg",
+		imageUrl: "/images/competence/can.jpeg",
 	},
 	{
 		title: {
@@ -41,7 +41,7 @@ const COMPETENCES = [
 			"Restful API",
 			"Computer Science",
 		],
-		imageUrl: "/work.jpeg",
+		imageUrl: "/images/competence/work.jpeg",
 	},
 	{
 		title: {
@@ -53,7 +53,7 @@ const COMPETENCES = [
 			fr: "J'aimerais apprendre",
 		},
 		tools: ["Spring / Spring boot", "Flask", "Django", "Kubernetes"],
-		imageUrl: "/futur.webp",
+		imageUrl: "/images/competence/futur.webp",
 	},
 	{
 		title: {
@@ -65,7 +65,7 @@ const COMPETENCES = [
 			fr: "J'ai appris et comprends",
 		},
 		tools: ["Docker", "Git", "Agile(Scrum)", "Java", "Python"],
-		imageUrl: "/knowledge.jpeg",
+		imageUrl: "/images/competence/knowledge.jpeg",
 	},
 ];
 
