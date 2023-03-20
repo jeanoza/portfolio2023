@@ -22,7 +22,7 @@ export default function Home() {
 			</Link>
 			<style jsx>{`
 				main {
-					background-image: url(https://miro.medium.com/max/12000/1*p9qBMe9Wql3Vx0f3tpcPOA.jpeg);
+					background-image: url(/images/main.jpeg);
 					background-size: cover;
 					background-position: center center;
 				}
