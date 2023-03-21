@@ -14,7 +14,7 @@ export default function Home() {
 						<div className="my-6 flex flex-col mx-auto text-center text-slate-400">
 							<span className="text-xl">Développeur Fullstack Junior</span>
 							<span className="text-lg">
-								TypeScript | React | Next | Node | Express | Nest
+								TypeScript | React | Next | Nest | Node | Express
 							</span>
 						</div>
 					</div>
