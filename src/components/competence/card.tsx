@@ -26,6 +26,9 @@ export default function Card({ title, content, tools, imageUrl }: IProps) {
 					background-size: cover;
 					background-position: center;
 				}
+				.card:hover > .cover {
+					background-size: 110%;
+				}
 			`}</style>
 		</div>
 	);
