@@ -9,7 +9,7 @@ const STATUT = {
 
 export default function Stack({ lang }: { lang: string }) {
 	return (
-		<div className="p-4">
+		<div className="">
 			<div className="font-bold flex justify-center items-center gap-4 my-4">
 				<h3>{STATUT[lang as keyof Lang]}</h3>
 				<div className="icon ft"></div>
@@ -33,61 +33,61 @@ export default function Stack({ lang }: { lang: string }) {
 			</div>
 			<style jsx>{`
 				.icon {
-					width: 56px;
-					height: 56px;
+					width: 40px;
+					height: 40px;
 					background-size: 100%;
 					background-repeat: no-repeat;
 					background-position: center center;
 				}
 				.ft {
-					background-image: url("/42_icon.png");
+					background-image: url("/images/about/42_icon.png");
 				}
 				.js {
-					background-image: url("/js.png");
+					background-image: url("/images/about/js.png");
 				}
 				.ts {
-					background-image: url("/ts.png");
+					background-image: url("/images/about/ts.png");
 				}
 				.node {
-					background-image: url("/node.png");
+					background-image: url("/images/about/node.png");
 				}
 				.nest {
-					background-image: url("/nest.svg");
+					background-image: url("/images/about/nest.svg");
 				}
 				.next {
-					background-image: url("/next.png");
+					background-image: url("/images/about/next.png");
 				}
 				.python {
-					background-image: url("/python.jpg");
+					background-image: url("/images/about/python.jpg");
 					transform: scale(1.5);
 				}
 				.cpp {
-					background-image: url("/cpp.svg");
+					background-image: url("/images/about/cpp.svg");
 					transform: scale(0.9);
 				}
 				.c {
-					background-image: url("/c.png");
+					background-image: url("/images/about/c.png");
 				}
 				.java {
-					background-image: url("/java.png");
+					background-image: url("/images/about/java.png");
 					transform: scale(1.7);
 				}
 				.react {
 					transform: scale(0.8);
-					background-image: url("/react.svg");
+					background-image: url("/images/about/react.svg");
 				}
 				.postgresql {
-					background-image: url("/postgresql.png");
+					background-image: url("/images/about/postgresql.png");
 				}
 				.mysql {
 					transform: scale(1.2);
-					background-image: url("/mysql.webp");
+					background-image: url("/images/about/mysql.webp");
 				}
 				.docker {
-					background-image: url("/docker.png");
+					background-image: url("/images/about/docker.png");
 				}
 				.shell {
-					background-image: url("/shell.png");
+					background-image: url("/images/about/shell.png");
 				}
 			`}</style>
 		</div>

@@ -12,7 +12,7 @@ const TITLES = [
 		fr: "Transformer une crise en une opportunité",
 	},
 	{
-		en: "A philosophy graduate in philosophy started coding since Covid-19...",
+		en: "A philosophy graduate started coding since Covid-19...",
 		fr: "Etudiant sortant de sciences humaines a commencé à coder depuis Covid-19...",
 	},
 ];
@@ -27,7 +27,7 @@ const CONTENTS = [
 	},
 	{
 		en: "As a Fullstack developer, I have gained valuable experience in designing and implementing databases, including PostgreSQL, MySQL, and MongoDB. Additionally, I have experience using Docker for deploying my applications, which enables me to create robust and easily deployable applications.",
-		fr: "En tant que développeur Fullstack, j'ai acquis une expérience précieuse en matière de conception et d'implémentation de bases de données, notamment PostgreSQL, MySQL et MongoDB.De plus, j'ai de l'expérience dans l'utilisation de Docker pour le déploiement de mes applications, ce qui me permet de créer des applications robustes et faciles à déployer.",
+		fr: "En tant que développeur Fullstack, j'ai acquis une expérience précieuse en matière de conception et d'implémentation de bases de données, notamment PostgreSQL, MySQL et MongoDB. De plus, j'ai de l'expérience dans l'utilisation de Docker pour le déploiement de mes applications, ce qui me permet de créer des applications robustes et faciles à déployer.",
 	},
 	{
 		en: "I am passionate about technology, motivated, and eager to learn and grow. With my coding and database skills, as well as my experience in using Docker, I am confident that I can bring added value to any company in search of a talented and motivated junior backend developer.",
@@ -42,8 +42,8 @@ export default function About() {
 	if (!lang) return null;
 	return (
 		<Layout>
-			<div className="flex flex-col gap-6 rounded-lg shadow-lg">
-				<div className="flex flex-col gap-4 justify-center items-center p-4">
+			<div className="flex flex-col rounded-lg shadow-lg w-100 md:w-2/3 p-4">
+				<div className="flex flex-col gap-4 justify-center items-center text-center">
 					<div className="avatar rounded-full mx-auto" />
 					<h3 className="font-semibold">{TITLES[0][lang as keyof Lang]}</h3>
 					<h3 className="text-primary">{TITLES[1][lang as keyof Lang]}</h3>
@@ -52,7 +52,7 @@ export default function About() {
 					</h3>
 				</div>
 				{typeof lang === "string" && <Stack lang={lang} />}
-				<div className="p-4">
+				<div className="">
 					{CONTENTS.map((content, index) => (
 						<p className="my-4" key={index}>
 							{content[lang as keyof Lang]}
@@ -64,7 +64,7 @@ export default function About() {
 				.avatar {
 					min-width: 120px;
 					min-height: 120px;
-					background-image: url("/kychoi.jpeg");
+					background-image: url("/images/about/kychoi.jpeg");
 					background-size: cover;
 					background-position: center center;
 				}

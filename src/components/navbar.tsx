@@ -101,7 +101,7 @@ export default function Navbar() {
 					})}
 				</ul>
 			</div>
-			<div className="navbar-end mr-4">
+			<div className="navbar-end">
 				<div
 					className="langIcon fr rounded-full w-8 h-8 cursor-pointer mx-1"
 					onClick={() => handleChangeLang("fr")}
@@ -122,10 +122,10 @@ export default function Navbar() {
 					transition: transform 0.1s linear;
 				}
 				.langIcon.fr {
-					background-image: url("/fr.png");
+					background-image: url("/images/navbar/fr.png");
 				}
 				.langIcon.en {
-					background-image: url("/en.png");
+					background-image: url("/images/navbar/en.png");
 				}
 			`}</style>
 		</div>

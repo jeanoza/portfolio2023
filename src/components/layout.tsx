@@ -8,13 +8,11 @@ export default function Layout({ children }: any) {
 	const title = pathname.slice(8);
 
 	return (
-		<div className="flex flex-col h-screen">
+		<div className="flex flex-col h-screen w-100">
 			<Seo title={title} />
 			<Navbar />
-			<main className="px-2 md:px-6 m-auto">
-				<div className="w-100 lg:w-10/12 mx-auto max-w-screen-xl">
-					{children}
-				</div>
+			<main className="px-2 md:px-0 m-auto lg:w-10/12 mx-auto max-w-screen-lg flex justify-center">
+				{children}
 			</main>
 			<Footer />
 		</div>
