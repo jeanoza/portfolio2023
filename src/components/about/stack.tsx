@@ -1,4 +1,4 @@
-const BADGES = ["TypeScript", "Node", "Express", "Nest", "React/Next", "PostgreSQL", "MySQL", "Docker", "Shell", "Unix", "Git"]
+const BADGES = ["TypeScript", "Node/Express/Nest", "React/Next", "SocketIO", "WebSocket", "PostgreSQL/MySQL", "Docker", "Shell", "Unix", "Git"]
 const BADGES_METHOD = ["Agile", "TDD", "Clean Code", "SOLID", "KISS", "DRY"]
 
 const STATUT = {

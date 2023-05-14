@@ -9,7 +9,7 @@ interface IProps {
 export default function Card({ title, content, tools, imageUrl }: IProps) {
 	return (
 		<div className="card card-compact w-11/12 sm:w-96 shadow-xl">
-			<div className="cover w-100" />
+			<div className="cover w-100 h-40" />
 			<div className="card-body">
 				<h2 className="card-title">{title}</h2>
 				<h3 className="text-lg">{content}</h3>
@@ -21,7 +21,6 @@ export default function Card({ title, content, tools, imageUrl }: IProps) {
 			</div>
 			<style jsx>{`
 				.cover {
-					height: 200px;
 					background-image: url(${imageUrl});
 					background-size: cover;
 					background-position: center;

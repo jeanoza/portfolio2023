@@ -42,16 +42,14 @@ export default function About() {
 	if (!lang) return null;
 	return (
 		<Layout>
-			<div className="flex flex-col w-100 md:w-2/3 gap-4">
-				<div className="flex flex-col gap-4 justify-center items-center text-center">
-					<div className="avatar rounded-full mx-auto" />
-					<h3 className="font-semibold">{TITLES[0][lang as keyof Lang]}</h3>
-					{/* <h3 className="text-primary">{TITLES[1][lang as keyof Lang]}</h3> */}
-					<h3 className="text-slate-400 italic">
-						{TITLES[2][lang as keyof Lang]}
-					</h3>
-					{typeof lang === "string" && <Stack lang={lang} />}
-				</div>
+			<div className="flex flex-col gap-4 justify-center items-center text-center  w-100 md:w-2/3 gap-4">
+				<div className="avatar rounded-full mx-auto" />
+				<h3 className="font-semibold">{TITLES[0][lang as keyof Lang]}</h3>
+				{/* <h3 className="text-primary">{TITLES[1][lang as keyof Lang]}</h3> */}
+				<h3 className="text-slate-400 italic">
+					{TITLES[2][lang as keyof Lang]}
+				</h3>
+				{typeof lang === "string" && <Stack lang={lang} />}
 			</div>
 			<style jsx>{`
 				.avatar {
