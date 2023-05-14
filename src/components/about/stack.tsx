@@ -11,7 +11,7 @@ const badges = ["badge-neutral", "badge-primary", "badge-secondary", "badge-acce
 export default function Stack({ lang }: { lang: string }) {
 	return (
 		<div className="">
-			<div className="font-bold flex  justify-center items-center gap-4 my-4">
+			<div className="font-bold flex justify-center items-center gap-4 my-4">
 				<h3>{STATUT[lang as keyof Lang]}</h3>
 				<div className="icon ft" />
 			</div>
@@ -23,14 +23,14 @@ export default function Stack({ lang }: { lang: string }) {
 				</div>
 				<div className="flex flex-wrap justify-center items-center gap-4 my-8">
 					{BADGES_METHOD.map((icon, index) => (
-						<div key={index} className={`badge badge-outline ${badges[index % badges.length]} `} >{icon}</div>
+						<div key={index} className={`badge badge-outline ${badges[index % badges.length]}`} >{icon}</div>
 					))}
 				</div>
 			</div>
 			<style jsx>{`
-				.badge{
+			.badge{
 					white-space: nowrap;
-				}
+			}
 			 .icon {
 				width: 40px;
 				height: 40px;
