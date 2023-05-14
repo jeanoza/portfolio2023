@@ -18,12 +18,12 @@ export default function Stack({ lang }: { lang: string }) {
 			<div className="mx-auto">
 				<div className="flex flex-wrap justify-center items-center gap-4 my-8">
 					{BADGES.map((icon, index) => (
-						<div key={index} className={`badge badge-outline ${badges[index % badges.length]}`} >{icon}</div>
+						<div key={index} className={`badge badge-outline ${badges[index % badges.length]} hover:scale-105`} >{icon}</div>
 					))}
 				</div>
 				<div className="flex flex-wrap justify-center items-center gap-4 my-8">
 					{BADGES_METHOD.map((icon, index) => (
-						<div key={index} className={`badge badge-outline ${badges[index % badges.length]}`} >{icon}</div>
+						<div key={index} className={`badge badge-outline ${badges[index % badges.length]} hover:scale-105`} >{icon}</div>
 					))}
 				</div>
 			</div>
