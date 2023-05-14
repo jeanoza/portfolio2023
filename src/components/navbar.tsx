@@ -103,11 +103,11 @@ export default function Navbar() {
 			</div>
 			<div className="navbar-end">
 				<div
-					className="langIcon fr rounded-full w-8 h-8 cursor-pointer mx-1"
+					className="langIcon fr rounded-full w-6 h-6 cursor-pointer mx-1"
 					onClick={() => handleChangeLang("fr")}
 				/>
 				<div
-					className="langIcon en rounded-full w-8 h-8 cursor-pointer mx-1"
+					className="langIcon en rounded-full w-6 h-6 cursor-pointer mx-1"
 					onClick={() => handleChangeLang("en")}
 				/>
 			</div>

@@ -1,6 +1,5 @@
-const ICONS_MAJOR = ["TypeScript", "Node", "Express", "Nest", "React/Next",];
-const ICONS_SECOND = ["PostgreSQL", "MySQL", "Docker", "Shell", "Unix"];
-const ICONS_ETC = ["Java", "Python", "C/C++"];
+const BADGES = ["TypeScript", "Node", "Express", "Nest", "React/Next", "PostgreSQL", "MySQL", "Docker", "Shell", "Unix", "Git"]
+const BADGES_METHOD = ["Agile", "TDD", "Clean Code", "SOLID", "KISS", "DRY"]
 
 const STATUT = {
 	en: "Fullstack Developer | Student at ",
@@ -12,28 +11,26 @@ const badges = ["badge-neutral", "badge-primary", "badge-secondary", "badge-acce
 export default function Stack({ lang }: { lang: string }) {
 	return (
 		<div className="">
-			<div className="font-bold flex justify-center items-center gap-4 my-4">
+			<div className="font-bold flex  justify-center items-center gap-4 my-4">
 				<h3>{STATUT[lang as keyof Lang]}</h3>
 				<div className="icon ft" />
 			</div>
-			<div className="w-3/4  mx-auto">
-				<div className="flex justify-center items-center gap-4 my-4">
-					{ICONS_MAJOR.map((icon, index) => (
-						<div key={index} className={`badge ${badges[index % badges.length]}`} >{icon}</div>
+			<div className="mx-auto">
+				<div className="flex flex-wrap justify-center items-center gap-4 my-8">
+					{BADGES.map((icon, index) => (
+						<div key={index} className={`badge badge-outline ${badges[index % badges.length]}`} >{icon}</div>
 					))}
 				</div>
-				<div className="flex justify-center items-center gap-4 my-4">
-					{ICONS_SECOND.map((icon, index) => (
-						<div key={index} className={`badge ${badges[index % badges.length]} `} >{icon}</div>
-					))}
-				</div>
-				<div className="flex justify-center items-center gap-4 my-4">
-					{ICONS_ETC.map((icon, index) => (
-						<div key={index} className={`badge ${badges[index % badges.length]} `} >{icon}</div>
+				<div className="flex flex-wrap justify-center items-center gap-4 my-8">
+					{BADGES_METHOD.map((icon, index) => (
+						<div key={index} className={`badge badge-outline ${badges[index % badges.length]} `} >{icon}</div>
 					))}
 				</div>
 			</div>
 			<style jsx>{`
+				.badge{
+					white-space: nowrap;
+				}
 			 .icon {
 				width: 40px;
 				height: 40px;

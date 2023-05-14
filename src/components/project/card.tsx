@@ -15,7 +15,7 @@ export default function Card({
 	prodUrl,
 }: IProps) {
 	return (
-		<div className="card card-compact shadow-xl w-100 md:w-2/3 mb-4 hover:scale-105 hover:-translate-y-1">
+		<div className="card card-compact shadow-xl w-100 md:w-2/3 mb-4 hover:-translate-y-0.5">
 			<div className="card-body">
 				<h2 className="card-title">{title}</h2>
 				<p>{content}</p>
