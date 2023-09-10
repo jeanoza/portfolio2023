@@ -4,21 +4,21 @@ import { useRouter } from "next/router";
 
 const TITLES = [
 	{
-		en: "Persevering, Curious, Organized, and Supportive",
-		fr: "Persévérant, Curieux, Organisé et Solidaire",
+		en: "Like `T` tetromino",
+		fr: "Comme tétrimino `T`",
 	},
 	{
 		en: "Make from a crisis to an opportunity",
 		fr: "Transformer une crise en une opportunité",
 	},
 	{
-		en: "A philosophy graduate started coding since Covid-19...",
-		fr: "Etudiant sortant de sciences humaines a commencé à coder depuis Covid-19...",
+		en: "In the likeness of the T tetromino in Tetris, I become more useful by adapting to changes. My versatility is my strength, just as its ability to fit in anywhere on the board. I always find my place and respond to changing needs, much like this tetromino in the game.",
+		fr: "À l'image du tétrimino T dans Tetris, je deviens plus utile en m'adaptant aux changements. Ma polyvalence est ma force, toutcomme sa capacité à s'intégrer partout sur le plateau. Je trouvetoujours ma place et réponds aux besoins changeants, toutcomme ce tétrimino dans le jeu.",
 	},
 ];
 const CONTENTS = [
 	{
-		en: "	Hello, I am a Fullstack developer with over a year of experience as a Fullstack developer at Estech Design. I am currently seeking a position as a junior backend developer and I possess coding skills in multiple languages such as C, C++, Java, Python, JavaScript, and TypeScript, as well as practical skills in using frameworks such as React, Next.js, Express, and Nest.js.",
+		en: "Hello, I am a Fullstack developer with over a year of experience as a Fullstack developer at Estech Design. I am currently seeking a position as a junior backend developer and I possess coding skills in multiple languages such as C, C++, Java, Python, JavaScript, and TypeScript, as well as practical skills in using frameworks such as React, Next.js, Express, and Nest.js.",
 		fr: "Bonjour, je suis un développeur Fullstack avec plus d'un an d'expérience en tant que Fullstack développeur chez Estech Design. Je suis actuellement à la recherche d'un poste de développeur backend junior et je possède des compétences en codage dans plusieurs langages tels que C, C++, Java, Python, JavaScript et TypeScript, ainsi que des compétences pratiques en utilisant des frameworks tels que React, Next.js, Express et Nest.js. ",
 	},
 	{
