@@ -13,7 +13,7 @@ const TITLES = [
 	},
 	{
 		en: "In the likeness of the T tetromino in Tetris, I become more useful by adapting to changes. My versatility is my strength, just as its ability to fit in anywhere on the board. I always find my place and respond to changing needs, much like this tetromino in the game.",
-		fr: "À l'image du tétrimino T dans Tetris, je deviens plus utile en m'adaptant aux changements. Ma polyvalence est ma force, toutcomme sa capacité à s'intégrer partout sur le plateau. Je trouvetoujours ma place et réponds aux besoins changeants, toutcomme ce tétrimino dans le jeu.",
+		fr: "À l'instar du tétrimino T dans Tetris, je deviens plus utile en m'adaptant aux changements. Ma polyvalence est ma force, tout comme sa capacité à s'intégrer partout sur le plateau. Je trouve toujours ma place et réponds aux besoins changeants, tout comme ce tétrimino dans le jeu.",
 	},
 ];
 const CONTENTS = [
