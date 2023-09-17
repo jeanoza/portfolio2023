@@ -53,9 +53,9 @@ export default function About() {
 			</div>
 			<style jsx>{`
 				.avatar {
-					min-width: 120px;
-					min-height: 120px;
-					background-image: url("/images/about/kychoi.jpeg");
+					min-width: 144px;
+					min-height: 144px;
+					background-image: url("/images/about/kychoi3.jpeg");
 					background-size: cover;
 					background-position: center center;
 				}
