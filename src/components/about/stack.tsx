@@ -6,7 +6,7 @@ const STATUT = {
 	fr: "Développeur Fullstack | Etudiant à ",
 };
 
-const badges = ["badge-neutral", "badge-primary", "badge-secondary", "badge-accent"]
+export const badges = ["badge-neutral", "badge-primary", "badge-secondary", "badge-accent"]
 
 export default function Stack({ lang }: { lang: string }) {
 	return (
