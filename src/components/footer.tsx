@@ -47,7 +47,7 @@ export default function Footer() {
           </svg>
         </Link>
         <Link
-          href="/cv_kyubong_choi_2023_v9.pdf"
+          href="/cv_kyubong_choi_2023_v1.0.pdf"
           target="_blank"
           className="fill-current hover:fill-primary"
         >
